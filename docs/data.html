@@ -11746,42 +11746,9 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="BAD-WIKI-EDIT-DETECTION">BAD WIKI EDIT DETECTION<a class="anchor-link" href="#BAD-WIKI-EDIT-DETECTION">&#182;</a></h1><p><em>Ryan Lapcevic and Stephen Robbins</em></p>
-<ul>
-<li><a href="https://snibborevets.github.io/bad_wiki_edits/overview">Overview</a></li>
-<li><a href="https://snibborevets.github.io/bad_wiki_edits/data">Data Collecting and Scraping</a></li>
-<li><a href="http://www.ffwizard.com/">FFWIZ</a></li>
-</ul>
-<hr>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Data">Data<a class="anchor-link" href="#Data">&#182;</a></h2><p><strong>Intrapage Links:</strong></p>
-<ul>
-<li><a href="#Data-Overview-and-Schema">Data Overview and Schema</a></li>
-<li><a href="#Inspection-and-Cleaning-of-Data">Inspection and Cleaning of Data</a></li>
-<li><a href="#Key-Decisions">Key Decisions</a></li>
-<li><a href="#Conclusion">Conclusion</a></li>
-</ul>
-<hr>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
@@ -11809,7 +11776,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[13]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[17]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <script>
@@ -11838,6 +11805,39 @@ $( document ).ready(code_toggle);
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Bad-Wiki-Edit-Detection">Bad Wiki Edit Detection<a class="anchor-link" href="#Bad-Wiki-Edit-Detection">&#182;</a></h1><p><em>Ryan Lapcevic and Stephen Robbins</em></p>
+<ul>
+<li><a href="https://snibborevets.github.io/bad_wiki_edits/overview">Overview</a></li>
+<li><a href="https://snibborevets.github.io/bad_wiki_edits/data">Data Collecting and Cleaning</a></li>
+<li><a href="http://www.ffwizard.com/">FFWIZ</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+<h2 id="DATA-COLLECTION-AND-CLEANING">DATA COLLECTION AND CLEANING<a class="anchor-link" href="#DATA-COLLECTION-AND-CLEANING">&#182;</a></h2><hr>
+<ul>
+<li><a href="#Data-Overview-and-Schema">Data Overview and Schema</a></li>
+<li><a href="#Inspection-and-Cleaning-of-Data">Inspection and Cleaning of Data</a></li>
+<li><a href="#Key-Decisions">Key Decisions</a></li>
+<li><a href="#Conclusion">Conclusion</a></li>
+</ul>
 <hr>
 
 </div>
@@ -11884,7 +11884,7 @@ $( document ).ready(code_toggle);
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># %load ../standard_import.txt</span>
@@ -11902,7 +11902,7 @@ $( document ).ready(code_toggle);
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">hitters_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Data/Hitters.csv&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
@@ -11917,7 +11917,7 @@ $( document ).ready(code_toggle);
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[15]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[19]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
